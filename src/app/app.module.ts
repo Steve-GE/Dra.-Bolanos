@@ -107,7 +107,18 @@ import { BlogDetailsPageComponent } from './components/pages/blog-details-page/b
 import { WidgetSidebarComponent } from './components/common/widget-sidebar/widget-sidebar.component';
 import { HowVaccinesWorkPageComponent } from './components/pages/how-vaccines-work-page/how-vaccines-work-page.component';
 import { RegisterForVaccinePageComponent } from './components/pages/register-for-vaccine-page/register-for-vaccine-page.component';
-
+import { AboutOneComponent } from './components/pages/home-demo-one/about-one/about-one.component';
+import { AboutTwoComponent } from './components/pages/home-demo-one/about-two/about-two.component';
+import { AboutThreeComponent } from './components/pages/home-demo-one/about-three/about-three.component';
+import { AboutFourComponent } from './components/pages/home-demo-one/about-four/about-four.component';
+import { AboutFiveComponent } from './components/pages/home-demo-one/about-five/about-five.component';
+import { AboutSixComponent } from './components/pages/home-demo-one/about-six/about-six.component';
+import { AboutSevenComponent } from './components/pages/home-demo-one/about-seven/about-seven.component';
+import { ProcedimientosComponent } from './components/pages/home-demo-one/procedimientos/procedimientos.component';
+import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaciones/afiliaciones.component';
+import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
+import { PublicacionesOneComponent } from './components/pages/home-demo-one/publicaciones/publicaciones-one/publicaciones-one.component';
+ 
 @NgModule({
     declarations: [
         AppComponent,
@@ -200,7 +211,18 @@ import { RegisterForVaccinePageComponent } from './components/pages/register-for
         BlogDetailsPageComponent,
         WidgetSidebarComponent,
         HowVaccinesWorkPageComponent,
-        RegisterForVaccinePageComponent
+        RegisterForVaccinePageComponent,
+        AboutOneComponent,
+        AboutTwoComponent,
+        AboutThreeComponent,
+        AboutFourComponent,
+        AboutFiveComponent,
+        AboutSixComponent,
+        AboutSevenComponent,
+        ProcedimientosComponent,
+        AfiliacionesComponent,
+        PublicacionesComponent,
+        PublicacionesOneComponent, 
     ],
     imports: [
         BrowserModule,

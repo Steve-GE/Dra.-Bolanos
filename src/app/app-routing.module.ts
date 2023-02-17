@@ -21,6 +21,7 @@ import { ForgotPasswordPageComponent } from './components/pages/forgot-password-
 import { HomeDemoEightComponent } from './components/pages/home-demo-eight/home-demo-eight.component';
 import { HomeDemoFiveComponent } from './components/pages/home-demo-five/home-demo-five.component';
 import { HomeDemoFourComponent } from './components/pages/home-demo-four/home-demo-four.component';
+import { AboutOneComponent } from './components/pages/home-demo-one/about-one/about-one.component';
 import { HomeDemoOneComponent } from './components/pages/home-demo-one/home-demo-one.component';
 import { HomeDemoSevenComponent } from './components/pages/home-demo-seven/home-demo-seven.component';
 import { HomeDemoSixComponent } from './components/pages/home-demo-six/home-demo-six.component';
@@ -44,9 +45,20 @@ import { ServicesPageThreeComponent } from './components/pages/services-page-thr
 import { ServicesPageTwoComponent } from './components/pages/services-page-two/services-page-two.component';
 import { TermsConditionsPageComponent } from './components/pages/terms-conditions-page/terms-conditions-page.component';
 import { TestimonialsPageComponent } from './components/pages/testimonials-page/testimonials-page.component';
+import { ServicesComponent } from './components/pages/home-demo-one/services/services.component';
+import { ProcedimientosComponent } from './components/pages/home-demo-one/procedimientos/procedimientos.component';
+import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaciones/afiliaciones.component';
+import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
+    {path: 'about-one', component: AboutOneComponent},
+    {path: 'servicios', component: ServicesComponent},
+    {path: 'procedimientos', component: ProcedimientosComponent},
+    {path: 'afiliaciones', component: AfiliacionesComponent},
+    {path: 'publicaciones', component: PublicacionesComponent},
+
+
     {path: 'index-2', component: HomeDemoTwoComponent},
     {path: 'index-3', component: HomeDemoThreeComponent},
     {path: 'index-4', component: HomeDemoFourComponent},
