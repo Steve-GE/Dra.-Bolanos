@@ -49,6 +49,8 @@ import { ServicesComponent } from './components/pages/home-demo-one/services/ser
 import { ProcedimientosComponent } from './components/pages/home-demo-one/procedimientos/procedimientos.component';
 import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaciones/afiliaciones.component';
 import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
+import { CirugiaRoboticaComponent } from './components/pages/home-demo-one/cirugia-robotica/cirugia-robotica.component';
+import { ContactComponent } from './components/pages/home-demo-one/contact/contact.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
@@ -57,6 +59,8 @@ const routes: Routes = [
     {path: 'procedimientos', component: ProcedimientosComponent},
     {path: 'afiliaciones', component: AfiliacionesComponent},
     {path: 'publicaciones', component: PublicacionesComponent},
+    {path: 'cirugia', component: CirugiaRoboticaComponent},
+    {path: 'contacto', component: ContactComponent},
 
 
     {path: 'index-2', component: HomeDemoTwoComponent},

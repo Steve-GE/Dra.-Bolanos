@@ -118,6 +118,9 @@ import { ProcedimientosComponent } from './components/pages/home-demo-one/proced
 import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaciones/afiliaciones.component';
 import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
 import { PublicacionesOneComponent } from './components/pages/home-demo-one/publicaciones/publicaciones-one/publicaciones-one.component';
+import { CirugiaRoboticaComponent } from './components/pages/home-demo-one/cirugia-robotica/cirugia-robotica.component';
+import { PublicacionesTwoComponent } from './components/pages/home-demo-one/publicaciones/publicaciones-two/publicaciones-two.component';
+import { ContactComponent } from './components/pages/home-demo-one/contact/contact.component';
  
 @NgModule({
     declarations: [
@@ -222,7 +225,10 @@ import { PublicacionesOneComponent } from './components/pages/home-demo-one/publ
         ProcedimientosComponent,
         AfiliacionesComponent,
         PublicacionesComponent,
-        PublicacionesOneComponent, 
+        PublicacionesOneComponent,
+        CirugiaRoboticaComponent,
+        PublicacionesTwoComponent,
+        ContactComponent, 
     ],
     imports: [
         BrowserModule,
