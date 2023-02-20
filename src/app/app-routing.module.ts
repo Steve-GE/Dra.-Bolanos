@@ -51,6 +51,7 @@ import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaci
 import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
 import { CirugiaRoboticaComponent } from './components/pages/home-demo-one/cirugia-robotica/cirugia-robotica.component';
 import { ContactComponent } from './components/pages/home-demo-one/contact/contact.component';
+import { FooterIndexComponent } from './components/pages/home-demo-one/footer-index/footer-index.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
@@ -61,6 +62,7 @@ const routes: Routes = [
     {path: 'publicaciones', component: PublicacionesComponent},
     {path: 'cirugia', component: CirugiaRoboticaComponent},
     {path: 'contacto', component: ContactComponent},
+    {path: 'footer', component: FooterIndexComponent},
 
 
     {path: 'index-2', component: HomeDemoTwoComponent},
