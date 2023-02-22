@@ -2,10 +2,12 @@
 <div class="page-banner-area ptb-100">
     <div class="container">
         <div class="page-banner-content">
-            <h2>Contacto</h2>
+            <h2>
+                {{ 'contacto.title' | translate }}
+            </h2>
             <ul class="pages-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li>Contacto</li>
+                <li><a routerLink="/">{{ 'nav.inicio' | translate }}</a></li>
+                <li>{{ 'contacto.title' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -17,37 +19,39 @@
         <div class="hospital-contact-form">
             <div class="section-title with-hospital-color">
                 <!-- <span class="sub-title">Let Us Help You</span> -->
-                <h2>¿Tienes alguna pregunta? Contáctanos</h2>
+                <h2>
+                    {{ 'contacto.pregunta' | translate }}
+                </h2>
             </div>
             <form>
                 <div class="row">
                     <div class="col-lg-6 col-sm-6">
                         <div class="form-group">
-                            <input type="text" name="name" class="form-control" required placeholder="Nombre">
+                            <input type="text" name="name" class="form-control" required placeholder="{{ 'contacto.nombre' | translate }}">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6">
                         <div class="form-group">
-                            <input type="email" name="email" class="form-control" required placeholder="Email">
+                            <input type="email" name="email" class="form-control" required placeholder="{{ 'contacto.email' | translate }}">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6">
                         <div class="form-group">
-                            <input type="text" name="phone_number" required class="form-control" placeholder="Teléfono">
+                            <input type="text" name="phone_number" required class="form-control" placeholder="{{ 'contacto.telefono' | translate }}">
                         </div>
                     </div>
                     <div class="col-lg-6 col-sm-6">
                         <div class="form-group">
-                            <input type="text" name="msg_subject" class="form-control" required placeholder="Asunto">
+                            <input type="text" name="msg_subject" class="form-control" required placeholder="{{ 'contacto.asunto' | translate }}">
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12">
                         <div class="form-group">
-                            <textarea name="message" class="form-control" cols="30" rows="5" required placeholder="Mensaje"></textarea>
+                            <textarea name="message" class="form-control" cols="30" rows="5" required placeholder="{{ 'contacto.mensaje' | translate }}"></textarea>
                         </div>
                     </div>
                     <div class="col-lg-12 col-sm-12">
-                        <button type="submit" class="default-btn">Enviar Mensaje</button>
+                        <button type="submit" class="default-btn">{{ 'contacto.mensajeEnviar' | translate }}</button>
                     </div>
                 </div>
             </form>

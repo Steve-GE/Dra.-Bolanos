@@ -1,19 +1,4 @@
-import { NgModule } from '@angular/core';
-import { TabsModule } from 'ngx-bootstrap/tabs';
-import { StickyNavModule } from 'ng2-sticky-nav';
-import { ModalModule } from 'ngx-bootstrap/modal';
-import { NgxScrollTopModule } from 'ngx-scrolltop';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-import { NgxPaginationModule } from 'ngx-pagination';
-import { NgxSmartModalModule } from 'ngx-smart-modal';
-import { HttpClientModule } from '@angular/common/http';
-import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
-import { AccordionModule } from 'ngx-bootstrap/accordion';
-import { BrowserModule } from '@angular/platform-browser';
-import { TimepickerModule } from 'ngx-bootstrap/timepicker';
-import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -34,9 +19,7 @@ import { FeaturesComponent } from './components/common/features/features.compone
 import { AboutComponent } from './components/common/about/about.component';
 import { AppointmentComponent } from './components/common/appointment/appointment.component';
 import { CallUsComponent } from './components/common/call-us/call-us.component';
-import { ServicesComponent } from './components/common/services/services.component';
-import { HomeoneBannerComponent } from './components/pages/home-demo-one/homeone-banner/homeone-banner.component';
-import { BannerFeaturesComponent } from './components/pages/home-demo-one/banner-features/banner-features.component';
+// import { ServicesComponent } from './components/common/services/services.component';
 import { RecentWorksComponent } from './components/common/recent-works/recent-works.component';
 import { HometwoBannerComponent } from './components/pages/home-demo-two/hometwo-banner/hometwo-banner.component';
 import { HomethreeBannerComponent } from './components/pages/home-demo-three/homethree-banner/homethree-banner.component';
@@ -107,13 +90,6 @@ import { BlogDetailsPageComponent } from './components/pages/blog-details-page/b
 import { WidgetSidebarComponent } from './components/common/widget-sidebar/widget-sidebar.component';
 import { HowVaccinesWorkPageComponent } from './components/pages/how-vaccines-work-page/how-vaccines-work-page.component';
 import { RegisterForVaccinePageComponent } from './components/pages/register-for-vaccine-page/register-for-vaccine-page.component';
-import { AboutOneComponent } from './components/pages/home-demo-one/about-one/about-one.component';
-import { AboutTwoComponent } from './components/pages/home-demo-one/about-two/about-two.component';
-import { AboutThreeComponent } from './components/pages/home-demo-one/about-three/about-three.component';
-import { AboutFourComponent } from './components/pages/home-demo-one/about-four/about-four.component';
-import { AboutFiveComponent } from './components/pages/home-demo-one/about-five/about-five.component';
-import { AboutSixComponent } from './components/pages/home-demo-one/about-six/about-six.component';
-import { AboutSevenComponent } from './components/pages/home-demo-one/about-seven/about-seven.component';
 import { ProcedimientosComponent } from './components/pages/home-demo-one/procedimientos/procedimientos.component';
 import { AfiliacionesComponent } from './components/pages/home-demo-one/afiliaciones/afiliaciones.component';
 import { PublicacionesComponent } from './components/pages/home-demo-one/publicaciones/publicaciones.component';
@@ -122,7 +98,39 @@ import { CirugiaRoboticaComponent } from './components/pages/home-demo-one/cirug
 import { PublicacionesTwoComponent } from './components/pages/home-demo-one/publicaciones/publicaciones-two/publicaciones-two.component';
 import { ContactComponent } from './components/pages/home-demo-one/contact/contact.component';
 import { FooterIndexComponent } from './components/pages/home-demo-one/footer-index/footer-index.component';
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { NgxScrollTopModule } from 'ngx-scrolltop';
+import { StickyNavModule } from 'ng2-sticky-nav';
+import { NgxSmartModalModule } from 'ngx-smart-modal';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { TabsModule } from 'ngx-bootstrap/tabs';
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
  
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import { HomeComponent } from './components/pages/home-demo-one/home/home.component';
+import { TayectoriaComponent } from './components/pages/home-demo-one/tayectoria/tayectoria.component';
+import { FirstSectionComponent } from './components/pages/home-demo-one/tayectoria/first-section/first-section.component';
+import { SecondSectionComponent } from './components/pages/home-demo-one/tayectoria/second-section/second-section.component';
+import { ThirdSectionComponent } from './components/pages/home-demo-one/tayectoria/third-section/third-section.component';
+import { FourSectionComponent } from './components/pages/home-demo-one/tayectoria/four-section/four-section.component';
+import { FiveSectionComponent } from './components/pages/home-demo-one/tayectoria/five-section/five-section.component';
+import { SixSectionComponent } from './components/pages/home-demo-one/tayectoria/six-section/six-section.component';
+import { SevenSectionComponent } from './components/pages/home-demo-one/tayectoria/seven-section/seven-section.component'; 
+import { ServicesComponent } from './components/pages/home-demo-one/services/services.component';
+
+export function HttpLoaderFactory(http: HttpClient) {
+    return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+  }
+
 @NgModule({
     declarations: [
         AppComponent,
@@ -144,8 +152,6 @@ import { FooterIndexComponent } from './components/pages/home-demo-one/footer-in
         AppointmentComponent,
         CallUsComponent,
         ServicesComponent,
-        HomeoneBannerComponent,
-        BannerFeaturesComponent,
         RecentWorksComponent,
         HometwoBannerComponent,
         HomethreeBannerComponent,
@@ -216,13 +222,6 @@ import { FooterIndexComponent } from './components/pages/home-demo-one/footer-in
         WidgetSidebarComponent,
         HowVaccinesWorkPageComponent,
         RegisterForVaccinePageComponent,
-        AboutOneComponent,
-        AboutTwoComponent,
-        AboutThreeComponent,
-        AboutFourComponent,
-        AboutFiveComponent,
-        AboutSixComponent,
-        AboutSevenComponent,
         ProcedimientosComponent,
         AfiliacionesComponent,
         PublicacionesComponent,
@@ -230,7 +229,16 @@ import { FooterIndexComponent } from './components/pages/home-demo-one/footer-in
         CirugiaRoboticaComponent,
         PublicacionesTwoComponent,
         ContactComponent,
-        FooterIndexComponent, 
+        FooterIndexComponent,
+        HomeComponent,
+        TayectoriaComponent,
+        FirstSectionComponent,
+        SecondSectionComponent,
+        ThirdSectionComponent,
+        FourSectionComponent,
+        FiveSectionComponent,
+        SixSectionComponent,
+        SevenSectionComponent, 
     ],
     imports: [
         BrowserModule,
@@ -243,13 +251,21 @@ import { FooterIndexComponent } from './components/pages/home-demo-one/footer-in
         ModalModule.forRoot(),
         TabsModule.forRoot(),
         AccordionModule.forRoot(),
-        BsDatepickerModule.forRoot(),
-        TimepickerModule.forRoot(),
+        BsDatepickerModule.forRoot(), 
         FormsModule,
         NgxPaginationModule,
         HttpClientModule,
         ReactiveFormsModule,
-        BsDropdownModule.forRoot()
+        BsDropdownModule.forRoot(),
+        TranslateModule.forRoot({
+            loader: {
+              provide: TranslateLoader,
+              useFactory: (http: HttpClient) => {
+                return new TranslateHttpLoader(http);
+              },
+              deps: [HttpClient]
+            }
+          })
     ],
     providers: [],
     bootstrap: [AppComponent]

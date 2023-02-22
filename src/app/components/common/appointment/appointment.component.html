@@ -424,7 +424,7 @@
                     <div class="appointment-info">
                         <div class="call-info">
                             <i class="flaticon-039-emergency-call"></i>
-                            Llamanos
+                            {{ 'home.SC.llamanos' | translate }}
                             <span>
                                 <a href="tel:088123654987">
                                     +52 777 22 781 22
@@ -433,7 +433,8 @@
                         </div>
                         <!-- <p>Aenean sollicitudin, here lorem lorem quis auctor nisi elit lorem nec.</p> -->
                         <a routerLink="/contact-us" class="default-btn">
-                            Contáctanos
+                            {{ 'home.SC.contact' | translate }}
+
                         </a>
                     </div>
                 </div>
@@ -444,26 +445,26 @@
                         <div class="col-lg-6 col-md-6">
                             <div class="make-appointment-content">
                                 <h4>
-                                    <i class="flaticon-170-calendar-1"></i>
-                                    Solicita una cita
+                                    <i class="flaticon-170-calendar-1"></i> 
+                                    {{ 'home.SC.sc' | translate }}
                                 </h4>
                                 <form>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Nombre">
+                                        <input type="text" class="form-control" placeholder="{{ 'home.SC.nombre' | translate }}">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Email">
+                                        <input type="text" class="form-control" placeholder="{{ 'home.SC.email' | translate }}">
                                     </div>
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Teléfono">
+                                        <input type="text" class="form-control" placeholder="{{ 'home.SC.tel' | translate }}">
                                     </div>
-                                    <button type="submit" class="default-btn">Solicitar cita</button>
+                                    <button type="submit" class="default-btn">{{ 'home.SC.sc' | translate }}</button>
                                 </form>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6">
                             <div class="content">
-                                <h4>Talento y experiencia</h4>
+                                <h4>{{ 'home.SC.TE' | translate }}</h4>
                                 <div class="box-image">
                                     <img src="assets/images/home/cita_video.jpg" alt="appointment-image">
                                     <!-- <iframe width="380" height="250" style="border-radius: 5px;" src="https://www.youtube.com/embed/0XdC1HUp-rU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->

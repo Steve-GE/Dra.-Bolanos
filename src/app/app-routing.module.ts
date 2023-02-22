@@ -20,8 +20,7 @@ import { FaqPageComponent } from './components/pages/faq-page/faq-page.component
 import { ForgotPasswordPageComponent } from './components/pages/forgot-password-page/forgot-password-page.component';
 import { HomeDemoEightComponent } from './components/pages/home-demo-eight/home-demo-eight.component';
 import { HomeDemoFiveComponent } from './components/pages/home-demo-five/home-demo-five.component';
-import { HomeDemoFourComponent } from './components/pages/home-demo-four/home-demo-four.component';
-import { AboutOneComponent } from './components/pages/home-demo-one/about-one/about-one.component';
+import { HomeDemoFourComponent } from './components/pages/home-demo-four/home-demo-four.component'; 
 import { HomeDemoOneComponent } from './components/pages/home-demo-one/home-demo-one.component';
 import { HomeDemoSevenComponent } from './components/pages/home-demo-seven/home-demo-seven.component';
 import { HomeDemoSixComponent } from './components/pages/home-demo-six/home-demo-six.component';
@@ -52,10 +51,12 @@ import { PublicacionesComponent } from './components/pages/home-demo-one/publica
 import { CirugiaRoboticaComponent } from './components/pages/home-demo-one/cirugia-robotica/cirugia-robotica.component';
 import { ContactComponent } from './components/pages/home-demo-one/contact/contact.component';
 import { FooterIndexComponent } from './components/pages/home-demo-one/footer-index/footer-index.component';
+import { HomeComponent } from './components/pages/home-demo-one/home/home.component';
+import { TayectoriaComponent } from './components/pages/home-demo-one/tayectoria/tayectoria.component';
 
 const routes: Routes = [
     {path: '', component: HomeDemoOneComponent},
-    {path: 'about-one', component: AboutOneComponent},
+    {path: 'about-one', component: TayectoriaComponent},
     {path: 'servicios', component: ServicesComponent},
     {path: 'procedimientos', component: ProcedimientosComponent},
     {path: 'afiliaciones', component: AfiliacionesComponent},
@@ -63,6 +64,8 @@ const routes: Routes = [
     {path: 'cirugia', component: CirugiaRoboticaComponent},
     {path: 'contacto', component: ContactComponent},
     {path: 'footer', component: FooterIndexComponent},
+    {path: 'home', component: HomeComponent},
+
 
 
     {path: 'index-2', component: HomeDemoTwoComponent},

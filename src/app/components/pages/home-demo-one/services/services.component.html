@@ -2,10 +2,10 @@
 <div class="page-banner-area ptb-100">
     <div class="container">
         <div class="page-banner-content">
-            <h2>Patologías</h2>
+            <h2>{{ 'patologia.title' | translate }}</h2>
             <ul class="pages-list">
-                <li><a href="index.html">Inicio</a></li>
-                <li>Patologías</li>
+                <li><a routerLink="/">{{ 'nav.inicio' | translate }}</a></li>
+                <li>{{ 'patologia.title' | translate }}</li>
             </ul>
         </div>
     </div>
@@ -31,10 +31,14 @@
                         </div> -->
                         <h3>
                             <a routerLink="/servicios">
-                                Cáncer de pulmón
+                                <!-- Cáncer de pulmón -->
+                                {{ 'patologias.1' | translate }}
                             </a>
                         </h3>
-                        <p>Tumor maligno que se desarrolla en los pulmones, generalmente causado por el tabaquismo y puede causar síntomas como tos, dificultad para respirar y dolor en el pecho.</p>
+                        <p>
+                            {{ 'patologias.1.1' | translate }}
+                            <!-- Tumor maligno que se desarrolla en los pulmones, generalmente causado por el tabaquismo y puede causar síntomas como tos, dificultad para respirar y dolor en el pecho. -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -53,10 +57,16 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Cáncer esofágico
+                                {{ 'patologias.2' | translate }}
+                               
+                                <!-- Cáncer esofágico -->
                             </a>
                         </h3>
-                        <p>Tumor maligno que se desarrolla en el esófago, el tubo que conecta la garganta con el estómago, y puede causar dificultad para tragar, pérdida de peso y dolor en el pecho.</p>
+                        <p>
+                                {{ 'patologias.2.1' | translate }}
+                           
+                            <!-- Tumor maligno que se desarrolla en el esófago, el tubo que conecta la garganta con el estómago, y puede causar dificultad para tragar, pérdida de peso y dolor en el pecho. -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -75,11 +85,16 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Derrame pleural
+                                {{ 'patologias.3' | translate }}
+                               
+                                <!-- Derrame pleural -->
                             </a>
                         </h3>
                         <p>
-                            Acumulación de líquido entre las capas de tejido que rodean los pulmones, causando dificultad para respirar y dolor en el pecho.
+                                {{ 'patologias.3.1' | translate }}
+                           
+                            <!-- Acumulación de líquido entre las capas de tejido que rodean los pulmones, causando dificultad para respirar y dolor en el pecho. -->
+
                             <br><br><br>
                         </p>
                     </div>
@@ -100,11 +115,15 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Empiemas
+                                {{ 'patologias.4' | translate }}
+                               
+                                <!-- Empiemas -->
                             </a>
                         </h3>
                         <p>
-                            Acumulación de pus en el espacio entre los pulmones y el revestimiento del tórax, lo que puede provocar fiebre, dolor de pecho y dificultad para respirar.
+                                {{ 'patologias.4.1' | translate }}
+                           
+                            <!-- Acumulación de pus en el espacio entre los pulmones y el revestimiento del tórax, lo que puede provocar fiebre, dolor de pecho y dificultad para respirar. -->
                             <br><br>
                         </p>
                     </div>
@@ -125,11 +144,15 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Estenosis traqueal
+                                {{ 'patologias.5' | translate }}
+                               
+                                <!-- Estenosis traqueal -->
                             </a>
                         </h3>
                         <p>
-                            Estrechamiento anormal de la tráquea que puede causar dificultad para respirar y tos crónica.
+                                {{ 'patologias.5.1' | translate }}
+                           
+                            <!-- Estrechamiento anormal de la tráquea que puede causar dificultad para respirar y tos crónica. -->
                             <br><br><br>
                         </p>
                     </div>
@@ -150,10 +173,16 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Hernias diafragmáticas
+                                {{ 'patologias.6' | translate }}
+                               
+                                <!-- Hernias diafragmáticas -->
                             </a>
                         </h3>
-                        <p>Abertura anormal en el diafragma, el músculo que separa el tórax del abdomen, que permite que los órganos abdominales se muevan hacia el tórax y causen dificultad para respirar.</p>
+                        <p>
+                                {{ 'patologias.6.1' | translate }}
+                           
+                            <!-- Abertura anormal en el diafragma, el músculo que separa el tórax del abdomen, que permite que los órganos abdominales se muevan hacia el tórax y causen dificultad para respirar. -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -177,11 +206,15 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Hiperhidrosis
+                                {{ 'patologias.7' | translate }}
+                               
+                                <!-- Hiperhidrosis -->
                             </a>
                         </h3>
                         <p>
-                            Condición en la que se produce sudoración excesiva, generalmente en las manos, pies y axilas, y puede causar molestias y vergüenza.
+                                {{ 'patologias.7.1' | translate }}
+                           
+                            <!-- Condición en la que se produce sudoración excesiva, generalmente en las manos, pies y axilas, y puede causar molestias y vergüenza. -->
                             <br><br>
                         </p>
                     </div>
@@ -202,99 +235,127 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Lesiones esofágicas
-                            </a>
-                        </h3>
-                        <p>Daño en el esófago que puede ser causado por factores como el reflujo ácido y la ingestión de sustancias tóxicas, y puede causar dificultad para tragar y dolor en el pecho.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-services">
-                    <div class="services-image">
-                        <a routerLink="/service-details" class="d-block">
-                            <img src="assets/images/services/services-6.jpg" alt="services-image">
-                        </a>
-                    </div>
-                    <div class="services-content">
-                        <!-- <div class="icon">
-                            <a routerLink="/service-details">
-                                <i class="flaticon-167-tooth-2"></i>
-                            </a>
-                        </div> -->
-                        <h3>
-                            <a routerLink="/service-details">
-                                Malformaciones congénitas del tórax
-                            </a>
-                        </h3>
-                        <p>Anomalías en la forma del tórax, como la Pectus Excavatum (hundimiento del esternón) y la Pectus Carinatum (protuberancia del esternón).</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-services">
-                    <div class="services-image">
-                        <a routerLink="/service-details" class="d-block">
-                            <img src="assets/images/services/services-6.jpg" alt="services-image">
-                        </a>
-                    </div>
-                    <div class="services-content">
-                        <!-- <div class="icon">
-                            <a routerLink="/service-details">
-                                <i class="flaticon-167-tooth-2"></i>
-                            </a>
-                        </div> -->
-                        <h3>
-                            <a routerLink="/service-details">
-                                Mediastinitis
-                            </a>
-                        </h3>
-                        <p>Inflamación del mediastino, el espacio en el centro del tórax que contiene el corazón, los grandes vasos sanguíneos y otros órganos, que puede ser causada por infección o lesión y puede ser potencialmente mortal.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-services">
-                    <div class="services-image">
-                        <a routerLink="/service-details" class="d-block">
-                            <img src="assets/images/services/services-6.jpg" alt="services-image">
-                        </a>
-                    </div>
-                    <div class="services-content">
-                        <!-- <div class="icon">
-                            <a routerLink="/service-details">
-                                <i class="flaticon-167-tooth-2"></i>
-                            </a>
-                        </div> -->
-                        <h3>
-                            <a routerLink="/service-details">
-                                Miastenia Gravis
-                            </a>
-                        </h3>
-                        <p>Enfermedad autoinmunitaria que causa debilidad muscular, incluyendo los músculos utilizados para respirar, y puede provocar dificultad para respirar, hablar y tragar.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
-                <div class="single-services">
-                    <div class="services-image">
-                        <a routerLink="/service-details" class="d-block">
-                            <img src="assets/images/services/services-6.jpg" alt="services-image">
-                        </a>
-                    </div>
-                    <div class="services-content">
-                        <!-- <div class="icon">
-                            <a routerLink="/service-details">
-                                <i class="flaticon-167-tooth-2"></i>
-                            </a>
-                        </div> -->
-                        <h3>
-                            <a routerLink="/service-details">
-                                Mesotelioma
+                                {{ 'patologias.8' | translate }}
+                               
+                                <!-- Lesiones esofágicas -->
                             </a>
                         </h3>
                         <p>
-                            Tumor maligno que se desarrolla en el revestimiento de los pulmones, la pared torácica o el abdomen, y generalmente es causado por la exposición al asbesto.
+                                {{ 'patologias.8.1' | translate }}
+                           
+                            <!-- Daño en el esófago que puede ser causado por factores como el reflujo ácido y la ingestión de sustancias tóxicas, y puede causar dificultad para tragar y dolor en el pecho. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.9' | translate }}
+                               
+                                <!-- Malformaciones congénitas del tórax -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.9.1' | translate }}
+                           
+                            <!-- Anomalías en la forma del tórax, como la Pectus Excavatum (hundimiento del esternón) y la Pectus Carinatum (protuberancia del esternón). -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.10' | translate }}
+                               
+                                <!-- Mediastinitis -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.10.1' | translate }}
+                           
+                            <!-- Inflamación del mediastino, el espacio en el centro del tórax que contiene el corazón, los grandes vasos sanguíneos y otros órganos, que puede ser causada por infección o lesión y puede ser potencialmente mortal. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.11' | translate }}
+                               
+                                <!-- Miastenia Gravis -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.11.1' | translate }}
+                           
+                            <!-- Enfermedad autoinmunitaria que causa debilidad muscular, incluyendo los músculos utilizados para respirar, y puede provocar dificultad para respirar, hablar y tragar. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.12' | translate }}
+                               
+                                <!-- Mesotelioma -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.12.1' | translate }}
+                           
+                            <!-- Tumor maligno que se desarrolla en el revestimiento de los pulmones, la pared torácica o el abdomen, y generalmente es causado por la exposición al asbesto. -->
                             <br><br>
                         </p>
                     </div>
@@ -315,11 +376,15 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Neumotórax
+                                {{ 'patologias.13' | translate }}
+                               
+                                <!-- Neumotórax -->
                             </a>
                         </h3>
                         <p>
-                            Presencia de aire en el espacio entre los pulmones y la pared torácica, lo que puede causar colapso del pulmón y dificultad para respirar.
+                                {{ 'patologias.13.1' | translate }}
+                           
+                            <!-- Presencia de aire en el espacio entre los pulmones y la pared torácica, lo que puede causar colapso del pulmón y dificultad para respirar. -->
                             <br><br>
                         </p>
                     </div>
@@ -340,10 +405,16 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Nódulos pulmonares
+                                {{ 'patologias.14' | translate }}
+                               
+                                <!-- Nódulos pulmonares -->
                             </a>
                         </h3>
-                        <p>Pequeñas protuberancias anormales en los pulmones que se detectan a menudo por radiografía o tomografía computarizada y pueden ser causadas por diversas afecciones.</p>
+                        <p>
+                                {{ 'patologias.14.1' | translate }}
+                     
+                            <!-- Pequeñas protuberancias anormales en los pulmones que se detectan a menudo por radiografía o tomografía computarizada y pueden ser causadas por diversas afecciones. -->
+                        </p>
                     </div>
                 </div>
             </div>
@@ -362,16 +433,140 @@
                         </div> -->
                         <h3>
                             <a routerLink="/service-details">
-                                Timomas
+                                {{ 'patologias.15' | translate }}
+                               
+                                <!-- Timomas -->
                             </a>
                         </h3>
                         <p>
-                            Tumor raro que se desarrolla en el timo, un órgano
+                                {{ 'patologias.15.1' | translate }}
+                           
+                            <!-- Tumor raro que se desarrolla en el timo, un órgano -->
                             <br><br><br><br>
                         </p>
                     </div>
                 </div>
             </div>
+
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.16' | translate }}
+                               
+                                <!-- Tiroides Intratoráccicas -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.16.1' | translate }}
+                           
+                            <!-- se refiere a la presencia de tejido tiroideo que se ha desarrollado en la parte inferior del cuello y ha crecido hacia el interior del tórax. -->
+                            <br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.17' | translate }}
+                               
+                                <!-- Traqueostomía -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.17.1' | translate }}
+                           
+                            <!-- es una intervención quirúrgica que se realiza para crear una abertura en la tráquea, la cual se utiliza para proporcionar una vía aérea alternativa en pacientes que tienen dificultades respiratorias o que necesitan ventilación mecánica a largo plazo. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.18' | translate }}
+                               
+                                <!-- Tumores diafragmáticos -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.18.1' | translate }}
+                           
+                            <!-- son masas anormales que se desarrollan en el diafragma, el músculo que separa el tórax del abdomen. Estos tumores pueden ser benignos o malignos. -->
+                            <br><br><br><br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="single-services">
+                    <div class="services-image">
+                        <a routerLink="/service-details" class="d-block">
+                            <img src="assets/images/services/services-6.jpg" alt="services-image">
+                        </a>
+                    </div>
+                    <div class="services-content">
+                        <!-- <div class="icon">
+                            <a routerLink="/service-details">
+                                <i class="flaticon-167-tooth-2"></i>
+                            </a>
+                        </div> -->
+                        <h3>
+                            <a routerLink="/service-details">
+                                {{ 'patologias.19' | translate }}
+                               
+                                <!-- Tumoración Traqueal -->
+                            </a>
+                        </h3>
+                        <p>
+                                {{ 'patologias.19.1' | translate }}
+                           
+                            <!-- es una masa anormal que se desarrolla en la tráquea, el conducto que conecta la laringe con los bronquios. Estos tumores pueden ser benignos o malignos. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+ 
      
 <!--              
             <div class="col-lg-12 col-sm-12 col-md-12">

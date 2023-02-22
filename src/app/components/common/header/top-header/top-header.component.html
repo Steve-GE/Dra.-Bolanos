@@ -33,9 +33,9 @@
                         </a> -->
                     </li>
                     <li class="languages-list">
-                        <select>
-                            <option value="1">Español</option>
-                            <option value="2">English</option>
+                        <select #langSelect (change)="switchLanguage(langSelect.value)">
+                            <option value="es">Español</option>
+                            <option value="en">English</option>
                         </select>
                     </li>
                 </ul>

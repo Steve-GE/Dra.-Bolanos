@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
     selector: 'app-top-header',
@@ -9,9 +10,17 @@ import { Router } from '@angular/router';
 export class TopHeaderComponent implements OnInit {
 
     constructor(
-        public router: Router
+        public router: Router,
+        private translate: TranslateService
     ) { }
 
-    ngOnInit(): void {}
+    ngOnInit(): void {
+        this.translate.setDefaultLang('es'); // idioma por defecto
+        this.translate.use('es'); // uso del idioma seleccionado
+    }
+
+    switchLanguage(language: string) {
+        this.translate.use(language);
+      }
 
 }
